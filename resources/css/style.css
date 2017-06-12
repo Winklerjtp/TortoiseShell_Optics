@@ -1,0 +1,231 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+}
+
+body {
+  line-height: 1.4rem;
+}
+
+/* Header content styling */
+header {
+  background-image: url('../images/glasses-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+nav {
+  padding: 1rem 0;
+  background-color: cadetblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+#main_logo {
+  font-size: 1rem;
+}
+
+#main_logo img{
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+ul {
+  margin-right: 1rem;
+}
+
+ul li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+.drop_menu {
+  display: none;
+}
+
+header .flex {
+  justify-content: flex-end;
+}
+
+.flex {
+  display: flex;
+}
+
+.main_banner {
+  background-color: white;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  line-height: 2.4rem;
+  display: inline-block;
+  padding: 1.5rem 5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.67rem 0;
+}
+/* Services content styling */
+.support {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+}
+
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.service img#paper_icon {
+  width: 3.5rem;
+}
+/* Information content styling */
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+
+.title {
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  color: white;
+  max-width: 10rem;
+  font-size: 1rem;
+}
+
+.info p {
+  padding: 1rem 0;
+}
+/* Footer content styling */
+footer {
+  background-color: azure;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+/* Breakpoints */
+
+@media only screen and (max-width: 1024px) {
+  header {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .main_banner {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .main_banner h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  #main_logo span {
+    display: none;
+  }
+
+  .main_banner {
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main_banner h1 {
+    font-size: 1rem;
+  }
+
+  .support {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
+
+  .service {
+    height: auto;
+    margin: 0.77rem;
+    font-size: 0.77rem;
+  }
+
+  .info {
+    width: auto;
+  }
+
+  .info p {
+    padding: 1rem;
+  }
+
+  .title {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer span {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .menu ul {
+    display: none;
+  }
+
+  .menu ul.drop_menu {
+    display: block;
+  }
+}
